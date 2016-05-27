@@ -1,3 +1,70 @@
-body {
-  background: #0F0;
+@import 'vendor/reset.css';
+@import 'vendor/sass-material-colors/_sass-material-colors.scss';
+
+html {
+  font-size:16px;
 }
+
+body {
+  background:#FFF;
+  color:#000;
+  font-family:'Droid Sans', sans-serif;
+}
+
+#content_inner, .below_body, #footer {
+  display:none;
+}
+
+/* Header */
+  #header {
+    background: material-color('red','500');
+    padding:1em;
+    #logo {
+      display:none;
+    }
+
+    #navbar-login {
+      position:absolute;
+      right:1em;
+      a {
+        color:#FFF;
+        font-weight:bold;
+        font-size:1.5em;
+        text-decoration:none;
+      }
+      .buttons {
+      }
+    }
+
+    #breadcrumb {
+      display:inline;
+      .navbit {
+        font-size:0;
+      }
+      a {
+        font-size:1rem;
+        position:relative;
+        color: material-color('red','700');
+        text-decoration:none;
+        background:#FFF;
+        border-radius:2px;
+        padding:.25em;
+      }
+      .navbit:nth-child(2) {
+        display:none;
+      }
+      #lastelement {
+        display:block;
+        margin-top:.5em;
+        font-weight:bold;
+        color:#FFF;
+        font-size:2em;
+      }
+    }
+    #navbarlinks {
+      display:none;
+    }
+    hr {
+      display:none;
+    }
+  }
